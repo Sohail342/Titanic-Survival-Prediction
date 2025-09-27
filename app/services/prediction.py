@@ -1,14 +1,15 @@
 import joblib
 import pandas as pd
 
-from app.ml_models.model__loader import knn_loaded, lr_loaded, nb_loaded
+from app.ml_models.model__loader import knn_loaded, lr_loaded, nb_loaded, svm_loaded
 from app.schemas.ml_models import MLModelInput
 
 knn_model = joblib.load(knn_loaded)
 lr_model = joblib.load(lr_loaded)
 nb_model = joblib.load(nb_loaded)
+svm_model = joblib.load(svm_loaded)
 
-models = {"KNN": knn_model, "LR": lr_model, "NB": nb_model}
+models = {"KNN": knn_model, "LR": lr_model, "NB": nb_model, "SVM": svm_model}
 
 FEATURE_COLUMNS = [
     "Pclass",

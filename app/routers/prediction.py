@@ -13,7 +13,7 @@ router = APIRouter()
 
 @router.post("/predict", response_model=PredictionResponse)
 def predict(
-    model_name: Literal["KNN", "LR", "NB"],
+    model_name: Literal["KNN", "LR", "NB", "SVM"],
     features: MLModelInput = Body(...),
     user: User = Depends(current_active_user),
 ) -> PredictionResponse:
