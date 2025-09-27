@@ -1,6 +1,6 @@
 # 🚢 Titanic Survival Prediction API
 
-A production-ready FastAPI application that implements three machine learning models for predicting Titanic passenger survival rates using custom classification algorithms.
+A production-ready FastAPI application that implements three machine learning models for predicting Titanic passenger survival rates using classification algorithms.
 
 ## 🎯 Project Overview
 
@@ -247,26 +247,3 @@ The project includes two Docker Compose configurations:
 - Implement load balancing with multiple workers
 - Use Gunicorn for production WSGI server
 - Monitor with appropriate logging and metrics
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Run tests and linting
-5. Submit a pull request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🙏 Acknowledgments
-
-- Titanic dataset from Kaggle
-- FastAPI framework
-- Scikit-learn for machine learning models
-- FastAPI-Users for authentication
-
----
-
-**Made with ❤️ for the Titanic Survival Prediction Challenge**
